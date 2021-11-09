@@ -1,0 +1,11 @@
+[
+  // See the onivim documentation for details on the format:
+  // https://onivim.github.io/docs/configuration/key-bindings
+  // Add key bindings here, for example:
+  // { "key": "<TAB>", "command": "workbench.action.quickOpen", "when": "editorTextFocus" },
+  { "key": "jk", "command": "vim.esc", "when": "insertMode" },
+  { "from": "<Tab>", "to": "<C-n>", "when": "insertMode && suggestWidgetVisible" },
+  { "from": "<S-Tab>", "to": "<C-p>", "when": "insertMode && suggestWidgetVisible" },
+  { "key": "<space>e", "command": "workbench.view.explorer", "when": "normalMode || sideBarVisible" },
+  { "key": "<space>lr", "command": "editor.action.rename", "when": "normalMode" }
+]
